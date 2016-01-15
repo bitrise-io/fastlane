@@ -144,6 +144,7 @@
 				BA9C7B931C492FEE00401AEA /* Sources */,
 				BA9C7B941C492FEE00401AEA /* Frameworks */,
 				BA9C7B951C492FEE00401AEA /* Resources */,
+				02A73FE81C4951500026A703 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -259,6 +260,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02A73FE81C4951500026A703 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 1b2b71550b75d863b1c0e4c326f47cd6e7f41737 9a95cf1fb6c9e39947c84cd475ebd7341c4885fa0c51f49c816e7afb9a2c58e1";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA9C7B931C492FEE00401AEA /* Sources */ = {
@@ -496,6 +514,7 @@
 				BA9C7BC61C492FEE00401AEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA9C7BC71C492FEE00401AEA /* Build configuration list for PBXNativeTarget "BitriseFastlaneSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +523,7 @@
 				BA9C7BC91C492FEE00401AEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA9C7BCA1C492FEE00401AEA /* Build configuration list for PBXNativeTarget "BitriseFastlaneSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +532,7 @@
 				BA9C7BCC1C492FEE00401AEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
