@@ -8,6 +8,9 @@ trigger_map:
 workflows:
   ci:
     steps:
+    - activate-ssh-key@3.1.0:
+        run_if: |-
+          {{ not (enveq "SSH_RSA_PRIVATE_KEY" "") }}
     - git-clone@3.1.0: {}
     - fastlane@2.1.1:
         inputs:
