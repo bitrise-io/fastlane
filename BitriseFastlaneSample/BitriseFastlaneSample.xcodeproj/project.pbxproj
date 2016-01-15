@@ -16,6 +16,7 @@
 		BA9C7BAA1C492FEE00401AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9C7BA81C492FEE00401AEA /* LaunchScreen.storyboard */; };
 		BA9C7BB51C492FEE00401AEA /* BitriseFastlaneSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C7BB41C492FEE00401AEA /* BitriseFastlaneSampleTests.swift */; };
 		BA9C7BC01C492FEE00401AEA /* BitriseFastlaneSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C7BBF1C492FEE00401AEA /* BitriseFastlaneSampleUITests.swift */; };
+		BA9C7BCE1C49314B00401AEA /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C7BCD1C49314B00401AEA /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BA9C7BBB1C492FEE00401AEA /* BitriseFastlaneSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitriseFastlaneSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9C7BBF1C492FEE00401AEA /* BitriseFastlaneSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitriseFastlaneSampleUITests.swift; sourceTree = "<group>"; };
 		BA9C7BC11C492FEE00401AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9C7BCD1C49314B00401AEA /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		BA9C7BBE1C492FEE00401AEA /* BitriseFastlaneSampleUITests */ = {
 			isa = PBXGroup;
 			children = (
+				BA9C7BCD1C49314B00401AEA /* SnapshotHelper.swift */,
 				BA9C7BBF1C492FEE00401AEA /* BitriseFastlaneSampleUITests.swift */,
 				BA9C7BC11C492FEE00401AEA /* Info.plist */,
 			);
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA9C7BC01C492FEE00401AEA /* BitriseFastlaneSampleUITests.swift in Sources */,
+				BA9C7BCE1C49314B00401AEA /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
