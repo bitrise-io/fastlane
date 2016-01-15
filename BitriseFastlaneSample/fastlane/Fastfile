@@ -66,6 +66,15 @@ platform :ios do
     # frameit
   end
 
+  lane :publish do |options|
+    crashlytics(
+      crashlytics_path: './Crashlytics.framework',
+      api_token: ENV['CRASHLYTICS_API_TOKEN'],
+      build_secret: ENV['CRASHLYTICS_BUILD_SECRET'],
+      ipa_path: "#{ENV['BITRISE_DEPLOY_DIR']}/BitriseFastlaneSample.ipa"
+    )
+  end
+
   # You can define as many lanes as you want
 
   after_all do |lane|
