@@ -39,7 +39,8 @@ platform :ios do
     )
     scan(
       scheme: "BitriseFastlaneSample",
-      destination: "name=iPhone 5s,OS=latest"
+      destination: "name=iPhone 5s,OS=latest",
+      output_directory: ENV['BITRISE_DEPLOY_DIR']
     )
 
     snapshot

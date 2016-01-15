@@ -1,21 +1,16 @@
+---
 format_version: 1.1.0
 default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
-
 app:
   envs: []
-
 trigger_map:
 - pattern: "*"
   is_pull_request_allowed: true
-  workflow: test
-
+  workflow: ci
 workflows:
-  test:
+  ci:
     steps:
-    - script:
+    - git-clone@3.1.0: {}
+    - fastlane@2.1.1:
         inputs:
-        - content: |-
-            #!/bin/bash
-            set -e
-            set -x
-            fastlane test
+        - lane: test
