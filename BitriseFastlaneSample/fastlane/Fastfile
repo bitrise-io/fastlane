@@ -66,6 +66,16 @@ platform :ios do
     # frameit
   end
 
+  lane :build_and_archive do |options|
+    gym(
+      scheme: "BitriseFastlaneSample",
+      provisioning_profile_path: ENV['BITRISE_PROVISION_URL'],
+      configuration: "Debug",
+      output_name: "BitriseFastlaneSample"
+    )
+
+  end
+
   lane :publish do |options|
     crashlytics(
       crashlytics_path: './Crashlytics.framework',

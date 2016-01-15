@@ -18,6 +18,10 @@ workflows:
         - work_dir: "$BITRISE_SOURCE_DIR/BitriseFastlaneSample"
     - fastlane@2.1.1:
         inputs:
+        - lane: build_and_archive
+        - work_dir: "$BITRISE_SOURCE_DIR/BitriseFastlaneSample"
+    - fastlane@2.1.1:
+        inputs:
         - lane: publish
         - work_dir: "$BITRISE_SOURCE_DIR/BitriseFastlaneSample"
     - deploy-to-bitrise-io@1.2.2:
