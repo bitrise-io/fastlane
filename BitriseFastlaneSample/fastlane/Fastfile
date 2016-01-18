@@ -43,7 +43,8 @@ platform :ios do
     gym(
       scheme: "BitriseFastlaneSample",
       configuration: "Release",
-      output_name: "BitriseFastlaneSample"
+      output_name: "BitriseFastlaneSample",
+      use_legacy_build_api: "true"
     )
 
     snapshot
