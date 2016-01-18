@@ -47,10 +47,11 @@ platform :ios do
       use_legacy_build_api: "true"
     )
 
-
     crashlytics(
-      api_token: ENV['CRASHLYTICS_API_TOKEN'],
-      build_secret: ENV['CRASHLYTICS_BUILD_SECRET']
+      crashlytics_path: "./Crashlytics.framework",
+      api_token: 'ENV['CRASHLYTICS_API_TOKEN']',
+      build_secret: ENV['CRASHLYTICS_BUILD_SECRET'],
+      ipa_path: "./BitriseFastlaneSample.ipa"
     )
 
     snapshot
