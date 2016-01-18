@@ -42,7 +42,6 @@ platform :ios do
 
     gym(
       scheme: "BitriseFastlaneSample",
-      provisioning_profile_path: ENV['BITRISE_PROVISION_URL'],
       configuration: "Release",
       output_name: "BitriseFastlaneSample"
     )
