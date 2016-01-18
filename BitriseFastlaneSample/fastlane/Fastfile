@@ -43,15 +43,16 @@ platform :ios do
     gym(
       scheme: "BitriseFastlaneSample",
       configuration: "Release",
-      output_name: "BitriseFastlaneSample",
+      output_directory: ENV['BITRISE_DEPLOY_DIR'],
+      output_name: "BitriseFastlaneSample.ipa",
       use_legacy_build_api: "true"
     )
 
     crashlytics(
       crashlytics_path: "./Crashlytics.framework",
-      api_token: 'ENV['CRASHLYTICS_API_TOKEN']',
+      api_token: ENV['CRASHLYTICS_API_TOKEN'],
       build_secret: ENV['CRASHLYTICS_BUILD_SECRET'],
-      ipa_path: "./BitriseFastlaneSample.ipa"
+      ipa_path: "#{ENV['BITRISE_DEPLOY_DIR']}/BitriseFastlaneSample.ipa"
     )
 
     snapshot
