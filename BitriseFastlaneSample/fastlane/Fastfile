@@ -33,10 +33,7 @@ platform :ios do
 
   desc "Runs all tests, archives app"
   lane :test do
-    xctest(
-      scheme: "BitriseFastlaneSample",
-      destination: "name=iPhone 5s,OS=latest"
-    )
+
     scan(
       scheme: "BitriseFastlaneSample",
       destination: "name=iPhone 5s,OS=latest",
