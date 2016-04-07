@@ -34,6 +34,9 @@ platform :ios do
   desc "Runs all tests, archives app"
   lane :test do
 
+    cert(username: ENV['FASTLANE_USERNAME'])
+    sigh(force: true)
+
     scan(
       scheme: "BitriseFastlaneSample",
       destination: "name=iPhone 5s,OS=latest",
