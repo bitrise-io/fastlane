@@ -35,7 +35,10 @@ platform :ios do
   lane :test do
 
     cert(username: ENV['FASTLANE_USERNAME'])
-    sigh(force: true)
+    sigh(
+      force: true
+      username: ENV['FASTLANE_USERNAME']
+    )
 
     scan(
       scheme: "BitriseFastlaneSample",
