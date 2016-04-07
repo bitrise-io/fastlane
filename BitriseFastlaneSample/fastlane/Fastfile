@@ -36,7 +36,7 @@ platform :ios do
 
     cert(username: ENV['FASTLANE_USERNAME'])
     sigh(
-      force: true
+      force: true,
       username: ENV['FASTLANE_USERNAME']
     )
 
